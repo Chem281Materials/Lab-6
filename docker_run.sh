@@ -1,0 +1,1 @@
+docker run -v ./:/repo -it chem281/lab5
