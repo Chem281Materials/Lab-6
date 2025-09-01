@@ -53,15 +53,17 @@ In the repo you should see the main file `src/clashes.cpp`. We are trying to wri
 You need to complete the following functions:
 
 1. getGeometricCenter
+
 $$ {C} = ( \frac{1}{N} \sum_{i=1}^{N} x_i,\ \frac{1}{N} \sum_{i=1}^{N} y_i,\ \frac{1}{N} \sum_{i=1}^{N} z_i ) $$
+
 2. translateMoleculeToCenter
-$$
-\vec{T} = \vec{C} - \vec{P} = (x_c - x,\ y_c - y,\ z_c - z)
-$$
+
+$$ \vec{T} = \vec{C} - \vec{P} = (x_c - x,\ y_c - y,\ z_c - z) $$
+
 3. hasClash
-$$
-cutoff > d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
-$$
+
+$$ cutoff > d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} $$
+
 The active site is defined as `std::vector<Atom>`, and the `Atom` class is also defined in `include/clashes.h`. We are using OpenBabel to hold the molecules and their data, most of the work involving this class has been done for you so you can reuse how to iterate over atoms and such but here is some [documentation](https://openbabel.org/api/3.0/classOpenBabel_1_1OBMol.shtml).
 
 Once you have completed all the functions above, you can compile the code using the commands above and try to run `./clash_exe` if you see SUCCESS!!! then you have completed the coding section.
