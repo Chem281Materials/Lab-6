@@ -99,6 +99,8 @@ Cython cannot cast types as easily as Pybind11 so you will need to more work to 
 
 See how read_pdb_atoms was done for some pointers.
 
+Also take a look at setup.py in the main directory to get an idea of how cython is setup.
+
 To build:
 ```
 # Make sure you are in the main directory
