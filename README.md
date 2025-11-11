@@ -32,7 +32,7 @@ cmake -Dpybind11_DIR=/usr/local/lib/python3.9/site-packages/pybind11/share/cmake
 make
 
 # Run executable
-./clash_exe
+./clashes_exe
 
 # Run pybind11 bindings test
 cd ..
