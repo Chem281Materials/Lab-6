@@ -108,5 +108,8 @@ python setup.py build_ext --inplace
 python3 test_cython.py
 ```
 
+### Create a new function in Cython without wrapping ###
+Now create a new function `get_geometric_center_cython` and in this case do not call the C++ function getGeometricCenter. Instead, write the logic for getting the centering in the `clash.pyx` file using the correct cdef typing. Once completed you can build again using the process above and test the function by updating the function call in `test_cython.py` or by creating a new one.
+
 ### Extra time
 The poses you were working on in this lab were created using `utility/make_random_poses`. Can you modify the code to create random poses in place? This way we wouldn't need the translateMoleculeToCenter or getGeometricCenter functions.
